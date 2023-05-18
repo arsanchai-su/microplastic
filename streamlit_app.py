@@ -38,5 +38,5 @@ if uploaded_image is not None:
         for i in range(len(class_name)):
             # Set the color to blue if it's the maximum value, otherwise use the default color
             color = "blue" if i == max_index else None
-            st.write(f"## <span style='color:{color}'>{class_name[i]} : {probli[0][i]:.2f}%</span>", unsafe_allow_html=True)
+            st.write(f"## <span style='color:{color}'>{class_name[i]} : {probli[0][i]*100:.2f}%</span>", unsafe_allow_html=True)
 
